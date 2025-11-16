@@ -1,183 +1,74 @@
-/* GLOBAL RESETS AND BASE STYLES */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d10; /* DARK Background */
-    color: #f0f0f5; /* Light Text */
+    background-color: #0d0d10; 
+    color: #f0f0f5; 
     line-height: 1.5;
 }
 
-/* Define the new gaming accent color */
+
 :root {
-    --accent-color: #39FF14; /* Neon Green/Lime */
+    --accent-color: #00ff99; 
     --card-bg: #1a1a25;     
     --inner-bg: #22222e;    
 }
 
-/* HEADER AND NAVIGATION */
+
 header {
     background-color: #121218;
     padding: 10px 0;
     border-bottom: 2px solid var(--accent-color);
 }
 
-nav {
-    max-width: 1100px; /* Slightly wider layout for gaming feel */
-    margin: 0 auto;
-    overflow: hidden;
+.navbar {
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
 }
 
-.logo {
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 5px 15px;
-}
-
-nav ul {
-    list-style: none;
+.nav-list { 
+    display: flex; 
+    align-items: center; 
+    list-style: none; 
     padding: 0;
     margin: 0;
-    float: right;
 }
 
-nav ul li {
-    display: inline;
+
+.nav-list li:nth-child(2) { 
+    margin-left: auto;
 }
 
-nav ul li a {
+.nav-list li {
+    margin: 5px;
+}
+
+.nav-list li a {
+    color: #ccc;
     text-decoration: none;
-    color: #b0b0b0;
-    padding: 10px 15px;
-    display: inline-block;
+    transition: color 0.3s;
+    padding: 5px 8px; 
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: var(--accent-color);
+.nav-list li a.active {
+    color: #00ff99;
 }
 
-/* HERO SECTION (Both pages) */
-#hero, .page-hero {
-    height: 300px;
-    padding-top: 80px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero-content h1 {
-    font-size: 36px;
-    color: #ffffff;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: #0d0d10;
-    padding: 10px 25px;
-    border-radius: 5px;
+.logo-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    display: flex; 
+    align-items: center; 
 }
 
-.btn-primary:hover {
-    background-color: #27c40d; /* Slightly darker hover */
-}
-
-/* --- HOME PAGE: TWO-COLUMN LAYOUT --- */
-#main-layout {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 15px;
-    overflow: hidden; /* Contains floats */
-}
-
-#main-content {
-    float: left;
-    width: 68%;
-    padding-right: 2%; /* Gap between columns */
-}
-
-#sidebar {
-    float: right;
-    width: 30%;
-    background-color: var(--inner-bg);
-    padding: 20px;
-    border-radius: 5px;
-    border-top: 3px solid var(--accent-color);
-}
-
-.section-title {
-    color: var(--accent-color);
-    font-size: 22px;
-    margin-top: 0;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-.feature-article {
-    background-color: var(--card-bg);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.article-image-placeholder {
-    width: 100%;
-    height: 180px;
-    background-color: #2a2a35;
-    margin: 10px 0;
-    border-radius: 3px;
-}
-
-.read-more {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.trending-list {
-    list-style: none;
-    padding: 0;
-}
-
-.trending-list li a {
-    color: #f0f0f5;
-    display: block;
-    padding: 8px 0;
-    border-bottom: 1px dashed #333;
-    text-decoration: none;
-}
-
-.trending-list li a:hover {
-    color: var(--accent-color);
-}
-
-.newsletter-signup {
-    padding-top: 20px;
-    text-align: center;
-}
-
-.newsletter-signup input[type="email"] {
-    width: 90%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #555;
-    background-color: #0d0d10;
-    color: #f0f0f5;
-    border-radius: 3px;
+.logo__ {
+    height: 35px;
+    width: 40px;
+    margin-right: 10px;
 }
 
 /* --- REVIEWS PAGE: GRID LAYOUT --- */
@@ -241,9 +132,8 @@ nav ul li a.active {
     color: #ffffff;
 }
 
-/* FOOTER */
 footer {
-    clear: both; /* Clear all previous floats */
+    clear: both; 
     text-align: center;
     padding: 15px;
     background-color: #121218;
