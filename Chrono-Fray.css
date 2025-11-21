@@ -1,25 +1,16 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d10; 
-    color: #f0f0f5; 
+    background-color: #0d0d10;
+    color: #f0f0f5;
     line-height: 1.5;
 }
-
-
-:root {
-    --accent-color: #00ff99; 
-    --card-bg: #1a1a25;     
-    --inner-bg: #22222e;    
-}
-
 
 header {
     background-color: #121218;
     padding: 10px 0;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid #00ff99;
 }
 
 .navbar {
@@ -28,16 +19,15 @@ header {
     top: 0;
 }
 
-.nav-list { 
-    display: flex; 
-    align-items: center; 
-    list-style: none; 
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-
-.nav-list li:nth-child(2) { 
+.nav-list li:nth-child(2) {
     margin-left: auto;
 }
 
@@ -49,7 +39,7 @@ header {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
-    padding: 5px 8px; 
+    padding: 5px 8px;
 }
 
 .nav-list li a.active {
@@ -61,8 +51,8 @@ header {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .logo__ {
@@ -71,24 +61,22 @@ header {
     margin-right: 10px;
 }
 
-/* --- REVIEWS PAGE: GRID LAYOUT --- */
 #reviews-grid {
     max-width: 1100px;
     margin: 20px auto;
     padding: 15px;
-    overflow: hidden; /* Contains floats for the grid */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .review-card {
-    float: left;
-    width: 31%; /* Allows for 3 columns with margins */
-    margin: 0 1%;
-    background-color: var(--card-bg);
+    background-color: #1a1a25;
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 20px;
     border: 1px solid #2a2a35;
-    box-sizing: border-box; /* Includes padding and border in the element's total width/height */
+    box-sizing: border-box;
 }
 
 .media-image-small {
@@ -100,7 +88,7 @@ header {
 }
 
 .review-card h3 {
-    color: var(--accent-color);
+    color: #00ff99;
     margin-top: 0;
     font-size: 1.2rem;
 }
@@ -120,20 +108,21 @@ header {
 }
 
 .score-high {
-    background-color: var(--accent-color);
+    background-color: #00ff99;
     color: #0d0d10;
 }
+
 .score-mid {
     background-color: #b0b0b0;
     color: #0d0d10;
 }
+
 .score-low {
     background-color: #a00;
     color: #ffffff;
 }
 
 footer {
-    clear: both; 
     text-align: center;
     padding: 15px;
     background-color: #121218;

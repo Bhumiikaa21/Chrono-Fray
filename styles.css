@@ -243,44 +243,7 @@ hr {
     font-style: italic;
 }
 
-/* 4. E-sports Hub */
-.esports-hub {
-    background: #282828;
-    padding: 20px;
-    border-radius: 8px;
-}
-.hub-sections {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 20px;
-}
-.hub-block {
-    flex: 1;
-    border-right: 1px solid #444;
-    padding-right: 20px;
-}
-.hub-block:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-.hub-block h3 {
-    color: white;
-    border-bottom: 1px solid #00ff99;
-    padding-bottom: 5px;
-    margin-top: 0;
-}
-.highlights-placeholder {
-    height: 200px;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    border-radius: 4px;
-}
-
-/* 5. Featured Analysis */
+/* 4. Featured Analysis */
 .analysis-card {
     background: #282828;
     padding: 15px;
@@ -293,7 +256,7 @@ hr {
     color: white;
 }
 
-/* 6. Sidebars */
+/* 5. Sidebars */
 .sidebar-widget {
     background: #282828;
     padding: 15px;
